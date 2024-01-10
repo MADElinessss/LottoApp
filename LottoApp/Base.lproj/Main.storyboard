@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LottoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOTTO APP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxJ-8L-zjr">
+                                <rect key="frame" x="142" y="59" width="109" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ep-uh-xBZ">
+                                <rect key="frame" x="151.66666666666666" y="123" width="90" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="tray.circle" catalog="system" title="Lotto"/>
+                                <connections>
+                                    <segue destination="JnE-q7-Fny" kind="show" id="Jwh-5o-9sr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce4-Sc-iS9">
+                                <rect key="frame" x="115" y="198" width="163" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="pencil.circle" catalog="system" title="TRANSLATION"/>
+                                <connections>
+                                    <segue destination="4j0-oQ-Qwo" kind="show" id="agS-y3-ziM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xxJ-8L-zjr" firstAttribute="centerX" secondItem="0ep-uh-xBZ" secondAttribute="centerX" id="AD6-Ta-8tx"/>
+                            <constraint firstItem="ce4-Sc-iS9" firstAttribute="top" secondItem="0ep-uh-xBZ" secondAttribute="bottom" constant="40" id="Dnt-Zc-KYS"/>
+                            <constraint firstItem="0ep-uh-xBZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lve-Sg-5S0"/>
+                            <constraint firstItem="ce4-Sc-iS9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cX8-4x-cUD"/>
+                            <constraint firstItem="ce4-Sc-iS9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j4T-KQ-pVe"/>
+                            <constraint firstItem="xxJ-8L-zjr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oGT-mO-5Nu"/>
+                            <constraint firstItem="0ep-uh-xBZ" firstAttribute="top" secondItem="xxJ-8L-zjr" secondAttribute="bottom" constant="40" id="xUh-RP-Kl2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="4"/>
+        </scene>
+        <!--Lotto View Controller-->
+        <scene sceneID="pwZ-bC-PUj">
+            <objects>
+                <viewController id="JnE-q7-Fny" customClass="LottoViewController" customModule="LottoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tDk-Vb-WmP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1qj-Tu-znd">
+                                <rect key="frame" x="100" y="100" width="193" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2on-Ni-enM">
+                                <rect key="frame" x="307" y="100" width="54" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="확인"/>
+                                <connections>
+                                    <action selector="confirmButtonTapped:" destination="JnE-q7-Fny" eventType="touchUpInside" id="EFA-kW-a4q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uK9-Ev-yRe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2on-Ni-enM" firstAttribute="top" secondItem="uK9-Ev-yRe" secondAttribute="top" constant="100" id="9dx-pZ-0VG"/>
+                            <constraint firstItem="1qj-Tu-znd" firstAttribute="leading" secondItem="uK9-Ev-yRe" secondAttribute="leading" constant="100" id="EJx-bZ-a0k"/>
+                            <constraint firstItem="uK9-Ev-yRe" firstAttribute="trailing" secondItem="2on-Ni-enM" secondAttribute="trailing" constant="32" id="EpW-dv-32U"/>
+                            <constraint firstItem="uK9-Ev-yRe" firstAttribute="trailing" secondItem="1qj-Tu-znd" secondAttribute="trailing" constant="100" id="FFQ-ZD-qjU"/>
+                            <constraint firstItem="1qj-Tu-znd" firstAttribute="top" secondItem="uK9-Ev-yRe" secondAttribute="top" constant="100" id="bph-KR-tqT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="W8K-tC-IW0"/>
+                    <connections>
+                        <outlet property="numberTextField" destination="1qj-Tu-znd" id="85K-bp-w1i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="85P-w2-YiL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826.71755725190837" y="-251.40845070422537"/>
+        </scene>
+        <!--Translation View Controller-->
+        <scene sceneID="XqU-La-Nzd">
+            <objects>
+                <viewController id="4j0-oQ-Qwo" customClass="TranslationViewController" customModule="LottoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ctT-SW-g7N">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9nO-uZ-Tq8">
+                                <rect key="frame" x="16" y="86" width="361" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zWL-hc-Uo4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uOE-xE-40r"/>
+                    <connections>
+                        <outlet property="userInputTextView" destination="9nO-uZ-Tq8" id="KWV-gc-nJ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbe-vb-Xug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826.71755725190837" y="419.71830985915494"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil.circle" catalog="system" width="128" height="123"/>
+        <image name="tray.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
