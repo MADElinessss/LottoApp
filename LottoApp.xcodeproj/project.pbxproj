@@ -15,6 +15,9 @@
 		57D25F042B4EAB58005E7DD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D25F022B4EAB58005E7DD6 /* LaunchScreen.storyboard */; };
 		57D25F0C2B4EAE3E005E7DD6 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D25F0B2B4EAE3E005E7DD6 /* LottoViewController.swift */; };
 		57D25F0E2B4EAE46005E7DD6 /* TranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D25F0D2B4EAE46005E7DD6 /* TranslationViewController.swift */; };
+		C148B8022B56B32A00795223 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C148B8012B56B32A00795223 /* Alamofire */; };
+		C148B8042B56B3BB00795223 /* Lotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148B8032B56B3BB00795223 /* Lotto.swift */; };
+		C148B8062B56B3E900795223 /* LottoAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148B8052B56B3E900795223 /* LottoAPIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,8 @@
 		57D25F052B4EAB58005E7DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57D25F0B2B4EAE3E005E7DD6 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		57D25F0D2B4EAE46005E7DD6 /* TranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
+		C148B8032B56B3BB00795223 /* Lotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lotto.swift; sourceTree = "<group>"; };
+		C148B8052B56B3E900795223 /* LottoAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoAPIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C148B8022B56B32A00795223 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +70,8 @@
 				57D25EF92B4EAB57005E7DD6 /* SceneDelegate.swift */,
 				57D25EFB2B4EAB57005E7DD6 /* ViewController.swift */,
 				57D25F0B2B4EAE3E005E7DD6 /* LottoViewController.swift */,
+				C148B8052B56B3E900795223 /* LottoAPIManager.swift */,
+				C148B8032B56B3BB00795223 /* Lotto.swift */,
 				57D25F0D2B4EAE46005E7DD6 /* TranslationViewController.swift */,
 				57D25EFD2B4EAB57005E7DD6 /* Main.storyboard */,
 				57D25F002B4EAB58005E7DD6 /* Assets.xcassets */,
@@ -89,6 +97,9 @@
 			dependencies = (
 			);
 			name = LottoApp;
+			packageProductDependencies = (
+				C148B8012B56B32A00795223 /* Alamofire */,
+			);
 			productName = LottoApp;
 			productReference = 57D25EF42B4EAB57005E7DD6 /* LottoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 57D25EEB2B4EAB57005E7DD6;
+			packageReferences = (
+				C148B8002B56B32A00795223 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 57D25EF52B4EAB57005E7DD6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,10 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C148B8042B56B3BB00795223 /* Lotto.swift in Sources */,
 				57D25EFC2B4EAB57005E7DD6 /* ViewController.swift in Sources */,
 				57D25F0C2B4EAE3E005E7DD6 /* LottoViewController.swift in Sources */,
 				57D25EF82B4EAB57005E7DD6 /* AppDelegate.swift in Sources */,
 				57D25EFA2B4EAB57005E7DD6 /* SceneDelegate.swift in Sources */,
+				C148B8062B56B3E900795223 /* LottoAPIManager.swift in Sources */,
 				57D25F0E2B4EAE46005E7DD6 /* TranslationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +324,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,6 +353,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -371,6 +389,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C148B8002B56B32A00795223 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C148B8012B56B32A00795223 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C148B8002B56B32A00795223 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 57D25EEC2B4EAB57005E7DD6 /* Project object */;
 }
